@@ -32,7 +32,7 @@
         </md-list>
       </md-sidenav>
 
-      <md-content flex id="content" ng-style="background-image:url({{ul.selected.thumbnail.path}}.{{ul.selected.thumbnail.extension}})" class="big-picture">
+      <md-content flex id="content" ng-style="{'background-image': 'url(' + ul.selected.thumbnail.path + '.' + ul.selected.thumbnail.extension + ')'}" class="big-picture">
         <h2>{{ul.selected.name}}</h2>
         <p>
           {{ul.selected.content}}
@@ -50,6 +50,7 @@
     <script src="Users.js"></script>
     <script src="UserService.js"></script>
     <script src="UserController.js"></script>
+    <script src="UserDirectives.js"></script>
 
 
 
