@@ -25,7 +25,7 @@
         <md-list ng-click="ul.toggleList()">
           <md-list-item ng-repeat="u in ul.users">
             <md-button ng-click="ul.selectUser(u)">
-              <img src="{{u.thumbnail.path}}.{{u.thumbnail.extension}}" class="avatar" />
+              <img ng-src="{{u.thumbnail.path}}.{{u.thumbnail.extension}}" class="avatar" />
               {{u.name}}
             </md-button>
           </md-list-item>
