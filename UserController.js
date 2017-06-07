@@ -35,7 +35,7 @@
       });
 
       self.selectSample = [
-         { link: "/", name: 'Marvel' },
+         { link: "index.html", name: 'Marvel' },
          { link: "users.html", name: 'Users' }
        ];
       self.selectedSample = angular.element(document.querySelector("body")).hasClass("marvel") ? self.selectSample[0] : self.selectSample[1];
