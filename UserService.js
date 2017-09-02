@@ -17,7 +17,7 @@ function UserService($q, $http) {
 
   this.loadAllUsers = function(){
     var url = isMarvel
-                ? "http://gateway.marvel.com:80/v1/public/characters?apikey=cc454bac15b4a6ab2c7ad37a12c2d669&offset="+ this.start +"&limit=50"
+                ? "https://gateway.marvel.com:80/v1/public/characters?apikey=cc454bac15b4a6ab2c7ad37a12c2d669&offset="+ this.start +"&limit=50"
                 : "api.json"
                 
     return new Promise(function(resolve,reject){
